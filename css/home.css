@@ -1,14 +1,47 @@
-h1 {
-    font-family: 'Odibee Sans', sans-serif;
+* {
     color: white;
     text-align: center;
 }
 
+h1 {
+    font-family: 'Odibee Sans', sans-serif;
+    font-size: 125px;
+    /* color: white; */
+}
+
+h3 {
+    font-family: 'Odibee Sans', sans-serif;
+    font-size: 50px;
+    /* color: white; */
+}
+
 .background-video-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
     display: flex;
     justify-content: center;
 }
 
 .overlay {
-    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#slogan-subtitle {
+    top: 0;
+}
+
+.homepage-buttons {
+    border: 1px;
+    font-family: 'Odibee Sans', sans-serif;
+    font-size: 30px;
 }

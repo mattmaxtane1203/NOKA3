@@ -77,14 +77,23 @@
             <div class="background-video-container">
 
                 <!-- Background Video -->
-                <video src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7f806cb08ad5d99f/61d908612e109d6c649d3b87/Disruption_VAL_DESKTOP_1730x720.mp4"
-                autoplay
-                muted></video>
+                <video autoplay muted loop>
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7f806cb08ad5d99f/61d908612e109d6c649d3b87/Disruption_VAL_DESKTOP_1730x720.mp4"
+                    type="video/mp4">
+                </video>
             </div>
 
-            <!-- <div class="overlay">
-                <h1>UNLEASH YOUR VENGEANCE</h1>
-            </div> -->
+            <div class="overlay">
+                <h1 id="slogan">UNLEASH YOUR VENGEANCE</h1>
+                <h3 id="slogan-subtitle">NOKA3 JUST GOT BETTER</h3>
+
+                <!-- Go to Register Now Button -->
+                <div class="homepage-buttons"
+                href="../html/registerNow.html"
+                onclick="registerNow()">
+                    <h5>REGISTER NOW</h5>
+                </div>
+            </div>
 
         </section>
 
