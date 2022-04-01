@@ -19,18 +19,23 @@ body {
     justify-content: space-between;
 }
 
-#game-title {
-    margin: 5px;
-    font-size: 50px;
+.game-title {
     height: 100%;
-    align-items: center;
+    margin-left: 10px;
+}
+
+.game-title > h1 {
+    height: 100%;
+    margin: 0;
+    padding-top: 25px;
+    font-size: 50px;
 }
 
 .navigation-buttons {
     height: 100%;
 
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 
     display: flex;
     flex-direction: row;
@@ -40,4 +45,9 @@ body {
 
 .navigation-buttons :hover {
     color: red;
+}
+
+.navigation-buttons-individual {
+    margin-right: 10px;
+    margin-left: 10px;
 }

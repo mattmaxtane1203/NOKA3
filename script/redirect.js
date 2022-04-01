@@ -1,7 +1,7 @@
 // Scripting for redirecting to web pages
 
 function home(){
-    window.open("../html/esports.html", "_self")
+    window.open("../html/home.html", "_self")
 }
 
 function heroes(){
