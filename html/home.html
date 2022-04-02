@@ -28,6 +28,15 @@
 
 <!-- Body -->
 <body>
+    
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="navigation-button page-active">Home</button>
+        <button class="navigation-button" onclick="heroes()">Heroes</button>
+        <button class="navigation-button" onclick="news()">News</button>
+        <button class="navigation-button" onclick="esports()">E-Sports</button>
+        <button class="navigation-button" onclick="registerNow()">Register Now</button>
+    </div>
 
     <!-- Navigation Bar -->
     <nav>
@@ -41,14 +50,14 @@
             <!-- Navigation Buttions -->
             <div class="navigation-buttons-container">
                 <button class="navigation-button page-active">Home</button>
-                <button class="navigation-button">Heroes</button>
-                <button class="navigation-button">News</button>
-                <button class="navigation-button">E-Sports</button>
-                <button class="navigation-button">Register Now</button>
+                <button class="navigation-button" onclick="heroes()">Heroes</button>
+                <button class="navigation-button" onclick="news()">News</button>
+                <button class="navigation-button" onclick="esports()">E-Sports</button>
+                <button class="navigation-button" onclick="registerNow()">Register Now</button>
             </div>
 
             <!-- Hamburger -->
-            <button class="hamburger" id="test" onclick="hamburgerActive()">
+            <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -56,12 +65,12 @@
 
         </div>
 
-
-
     </nav>
 
     <!-- Content -->
     <div class="content">
+
+        <h1>HOME</h1>
 
     </div>
 

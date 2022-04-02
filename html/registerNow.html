@@ -18,6 +18,7 @@
 
     <!-- Javascript -->
     <script src="../script/redirect.js"></script>
+    <script src="../script/hamburger.js"></script>
 
     <title>NoKa 3</title>
 </head>
@@ -25,46 +26,43 @@
 <!-- Body -->
 <body>
 
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="navigation-button" onclick="home()">Home</button>
+        <button class="navigation-button" onclick="heroes()">Heroes</button>
+        <button class="navigation-button" onclick="news()">News</button>
+        <button class="navigation-button" onclick="esports()">E-Sports</button>
+        <button class="navigation-button page-active">Register Now</button>
+    </div>
 
     <!-- Navigation Bar -->
-    <div class="navigation-bar">
+    <nav>
 
-        <!-- Content -->
-        <div class="navigation-bar-content">
+        <!-- Container -->
+        <div class="nav-container">
 
-            <!-- Game title -->
-            <section class="game-title">
-                
-                <!-- Game Title Text -->
-                <h1>NOKA3</h1>
+            <!-- Game Logo -->
+            <h1>NOKA3</h1>
 
-            </section>
+            <!-- Navigation Buttions -->
+            <div class="navigation-buttons-container">
+                <button class="navigation-button" onclick="home()">Home</button>
+                <button class="navigation-button" onclick="heroes()">Heroes</button>
+                <button class="navigation-button" onclick="news()">News</button>
+                <button class="navigation-button" onclick="esports()">E-Sports</button>
+                <button class="navigation-button page-active">Register Now</button>
+            </div>
 
-            <!-- Navigation Buttons -->
-            <section class="navigation-buttons">
-                <h2 class="navigation-buttons-individual" 
-                href="../html/home.html"
-                onclick="home()">Home</h2>
-
-                <h2 class="navigation-buttons-individual" 
-                href="../html/heroes.html" 
-                onclick="heroes()">Heroes</h2>
-
-                <h2 class="navigation-buttons-individual"
-                href="../html/news.html"
-                onclick="news()">News</h2>
-
-                <h2 class="navigation-buttons-individual"
-                href="../html/esports.html"
-                onclick="esports()">E-Sports</h2>
-
-                <h2 class="navigation-buttons-individual"
-                href="../html/registerNow.html">Register Now</h2>
-            </section>
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
         </div>
 
-    </div>
+    </nav>
 
     <!-- Content -->
     <div class="content">
