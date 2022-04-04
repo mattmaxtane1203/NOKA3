@@ -41,7 +41,7 @@ nav h1 {
     background-color: black;
     position: absolute;
     right: 0;
-    z-index: 99;
+    z-index: 100;
 
     display: none;
     flex-direction: column;
@@ -96,7 +96,7 @@ nav {
 
     background-color: white;
     border-radius: 6px;
-    z-index: 100;
+    z-index: 999;
 
     transform-origin: 0 0;
 

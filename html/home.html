@@ -20,16 +20,13 @@
     <script src="../script/redirect.js"></script>
     <script src="../script/hamburger.js"></script>
 
-    <!-- Links -->
-    <!-- "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7f806cb08ad5d99f/61d908612e109d6c649d3b87/Disruption_VAL_DESKTOP_1730x720.mp4" -->
-
     <title>NoKa 3</title>
 </head>
 
 <!-- Body -->
 <body>
     
-    <!-- Sidebar -->
+    <!-- TODO: Make sidebar follow when user scrolls -->
     <div class="sidebar" id="sidebar">
         <button class="navigation-button page-active">Home</button>
         <button class="navigation-button" onclick="heroes()">Heroes</button>
@@ -73,29 +70,43 @@
         <!-- Encourage to register section -->
         <section class="encouragement">
 
+            <!-- Titles section -->
+            <div class="text">
+                <h1>Unleash Your Vengeance</h1>
+                <p>NOKA3 is the all-new and improved, free-to-play first-person shooter from SungTan. <br >With new maps, heroes and game mechanics, don't hold your shots back against players from all around the world.</p>
+                
+                <!-- TODO: Fix hover effect -->
+                <div class="redirect-buttons">
+                    <h1>
+                        <a href="../html/registerNow.html">Register Now</a>
+                    </h1>
+                </div>
+            </div>
+
             <!-- Background video -->
-            <video autoplay muted loop class="background-video">
-                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7f806cb08ad5d99f/61d908612e109d6c649d3b87/Disruption_VAL_DESKTOP_1730x720.mp4" type="video/mp4">
-            </video>
-
-
+            <div class="video-container">
+                <video autoplay muted loop class="background-video">
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7f806cb08ad5d99f/61d908612e109d6c649d3b87/Disruption_VAL_DESKTOP_1730x720.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
 
         <!-- News section -->
         <section class="news">
-
+            <h1>News</h1>
         </section>
 
         <!-- E-Sports section -->
         <section class="esports">
-            
+            <h1>E-Sports</h1>
         </section>
 
     </div>
 
     <!-- Footer -->
     <footer>
-
+        <h1>NOKA3</h1>
+        <h1>© 2022 SungTan, Inc.</h1>
     </footer>
     
 </body>
