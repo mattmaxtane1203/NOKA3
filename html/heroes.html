@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/navigationbar.css">
+    <!-- <link rel="stylesheet" href="../css/navigationbar.css"> -->
+    <link rel="stylesheet" href="/css/navbarV2.css">
     <link rel="stylesheet" href="../css/heroes.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
     <!-- Javascript -->
     <script src="../script/redirect.js"></script>
@@ -26,54 +28,130 @@
 <!-- Body -->
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <button class="navigation-button" onclick="home()">Home</button>
-        <button class="navigation-button page-active">Heroes</button>
-        <button class="navigation-button" onclick="news()">News</button>
-        <button class="navigation-button" onclick="esports()">E-Sports</button>
-        <button class="navigation-button" onclick="registerNow()">Register Now</button>
-    </div>
-
-    <!-- Navigation Bar -->
     <nav>
-
-        <!-- Container -->
-        <div class="nav-container">
-
-            <!-- Game Logo -->
-            <h1>NOKA3</h1>
-
-            <!-- Navigation Buttions -->
-            <div class="navigation-buttons-container">
-                <button class="navigation-button" onclick="home()">Home</button>
-                <button class="navigation-button page-active">Heroes</button>
-                <button class="navigation-button" onclick="news()">News</button>
-                <button class="navigation-button" onclick="esports()">E-Sports</button>
-                <button class="navigation-button" onclick="registerNow()">Register Now</button>
-            </div>
-
-            <!-- Hamburger -->
-            <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
+        <div class="logo">
+            NOKA3
         </div>
-
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/html/home.html">Home</a></li>
+            <li><a class="active" href="/html/heroes.html">Heroes</a></li>
+            <li><a href="/html/news.html">News</a></li>
+            <li><a href="/html/esports.html">E-Sports</a></li>
+            <li><a href="/html/registerNow.html">Register Now</a></li>
+        </ul>
     </nav>
 
     <!-- Content -->
     <div class="content">
 
-        <h1>HEROES</h1>
+        <section class="hero" id="zack">
+        </section>
+        <section class="hero-stats">
+            <h1>ZACK</h1>
+            <div class="stats">
+                <section class="category">
+                    <h3>STRENGTH</h3>
+                    <h3>AGILITY</h3>
+                    <h3>INTELLIGENCE</h3>
+                </section>
+                <section class="level">
+                    <h3>88</h3>
+                    <h3>96</h3>
+                    <h3>35</h3>
+                </section>
+            </div>
+        </section>
+
+        <section class="hero" id="chase">
+            
+        </section>
+        <section class="hero-stats">
+            <h1>CHASE</h1>
+            <div class="stats">
+                <section class="category">
+                    <h3>STRENGTH</h3>
+                    <h3>AGILITY</h3>
+                    <h3>INTELLIGENCE</h3>
+                </section>
+                <section class="level">
+                    <h3>97</h3>
+                    <h3>23</h3>
+                    <h3>90</h3>
+                </section>
+            </div>
+        </section>
+
+        <section class="hero" id="annie">
+
+        </section>
+        <section class="hero-stats">
+            <h1>ANNIE</h1>
+            <div class="stats">
+                <section class="category">
+                    <h3>STRENGTH</h3>
+                    <h3>AGILITY</h3>
+                    <h3>INTELLIGENCE</h3>
+                </section>
+                <section class="level">
+                    <h3>20</h3>
+                    <h3>92</h3>
+                    <h3>90</h3>
+                </section>
+            </div>
+        </section>
+
+        <section class="hero" id="hunter">
+
+        </section>
+        <section class="hero-stats">
+            <h1>HUNTER</h1>
+            <div class="stats">
+                <section class="category">
+                    <h3>STRENGTH</h3>
+                    <h3>AGILITY</h3>
+                    <h3>INTELLIGENCE</h3>
+                </section>
+                <section class="level">
+                    <h3>50</h3>
+                    <h3>75</h3>
+                    <h3>90</h3>
+                </section>
+            </div>
+        </section>
+
+        <section class="hero" id="axe">
+
+        </section>
+        <section class="hero-stats">
+            <h1>AXE</h1>
+            <div class="stats">
+                <section class="category">
+                    <h3>STRENGTH</h3>
+                    <h3>AGILITY</h3>
+                    <h3>INTELLIGENCE</h3>
+                </section>
+                <section class="level">
+                    <h3>97</h3>
+                    <h3>63</h3>
+                    <h3>15</h3>
+                </section>
+            </div>
+        </section>
 
     </div>
 
     <!-- Footer -->
     <footer>
-
+        <footer>
+            <div class="footer-text">
+                <h1>NOKA3</h1>
+                <h3>© 2022 SungTan, Inc.</h1>
+            </div>
+        </footer>
     </footer>
     
 </body>

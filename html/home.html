@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/navigationbar.css">
+    <!-- <link rel="stylesheet" href="../css/navigationbar.css"> -->
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbarV2.css">
 
     <!-- Javascript -->
     <script src="../script/redirect.js"></script>
@@ -25,43 +27,22 @@
 
 <!-- Body -->
 <body>
-    
-    <!-- TODO: Make sidebar follow when user scrolls -->
-    <div class="sidebar" id="sidebar">
-        <button class="navigation-button page-active">Home</button>
-        <button class="navigation-button" onclick="heroes()">Heroes</button>
-        <button class="navigation-button" onclick="news()">News</button>
-        <button class="navigation-button" onclick="esports()">E-Sports</button>
-        <button class="navigation-button" onclick="registerNow()">Register Now</button>
-    </div>
 
-    <!-- Navigation Bar -->
     <nav>
-
-        <!-- Container -->
-        <div class="nav-container">
-
-            <!-- Game Logo -->
-            <h1>NOKA3</h1>
-
-            <!-- Navigation Buttions -->
-            <div class="navigation-buttons-container">
-                <button class="navigation-button page-active">Home</button>
-                <button class="navigation-button" onclick="heroes()">Heroes</button>
-                <button class="navigation-button" onclick="news()">News</button>
-                <button class="navigation-button" onclick="esports()">E-Sports</button>
-                <button class="navigation-button" onclick="registerNow()">Register Now</button>
-            </div>
-
-            <!-- Hamburger -->
-            <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
+        <div class="logo">
+            NOKA3
         </div>
-
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="/html/home.html">Home</a></li>
+            <li><a href="/html/heroes.html">Heroes</a></li>
+            <li><a href="/html/news.html">News</a></li>
+            <li><a href="/html/esports.html">E-Sports</a></li>
+            <li><a href="/html/registerNow.html">Register Now</a></li>
+        </ul>
     </nav>
 
     <!-- Content -->
@@ -75,11 +56,8 @@
                 <h1>Unleash Your Vengeance</h1>
                 <p>NOKA3 is the all-new and improved, free-to-play first-person shooter from SungTan. <br >With new maps, heroes and game mechanics, don't hold your shots back against players from all around the world.</p>
                 
-                <!-- TODO: Fix hover effect -->
-                <div class="redirect-buttons">
-                    <h1>
-                        <a href="../html/registerNow.html">Register Now</a>
-                    </h1>
+                <div class="buttons-container">
+                    <button class="redirect-button" onclick="registerNow()">REGISTER NOW</button>
                 </div>
             </div>
 
@@ -92,21 +70,31 @@
         </section>
 
         <!-- News section -->
-        <section class="news">
-            <h1>News</h1>
+        <section class="container" id="news">
+            <h1>NEWS</h1>
+            <h3>Check out the latest updates in the world of NOKA3</h3>
+            <div class="buttons-container">
+                <button class="redirect-button" onclick="news()">GO TO NEWS PAGE</button>
+            </div>
         </section>
 
         <!-- E-Sports section -->
-        <section class="esports">
-            <h1>E-Sports</h1>
+        <section class="container" id="esports">
+            <h1>WITNESS OUR E-SPORTS</h1>
+            <h3>Watch the greatest players in NOKA3 compete for the title</h3>
+            <div class="buttons-container">
+                <button class="redirect-button" onclick="esports()">GO TO E-SPORTS PAGE</button>
+            </div>
         </section>
 
     </div>
 
     <!-- Footer -->
     <footer>
-        <h1>NOKA3</h1>
-        <h1>© 2022 SungTan, Inc.</h1>
+        <div class="footer-text">
+            <h1>NOKA3</h1>
+            <h3>© 2022 SungTan, Inc.</h1>
+        </div>
     </footer>
     
 </body>

@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/navigationbar.css">
+    <!-- <link rel="stylesheet" href="../css/navigationbar.css"> -->
+    <link rel="stylesheet" href="/css/navbarV2.css">
     <link rel="stylesheet" href="../css/esports.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <!-- Javascript -->
     <script src="../script/redirect.js"></script>
@@ -26,54 +28,169 @@
 <!-- Body -->
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <button class="navigation-button" onclick="home()">Home</button>
-        <button class="navigation-button" onclick="heroes()">Heroes</button>
-        <button class="navigation-button" onclick="news()">News</button>
-        <button class="navigation-button page-active">E-Sports</button>
-        <button class="navigation-button" onclick="registerNow()">Register Now</button>
-    </div>
-
-    <!-- Navigation Bar -->
     <nav>
-
-        <!-- Container -->
-        <div class="nav-container">
-
-            <!-- Game Logo -->
-            <h1>NOKA3</h1>
-
-            <!-- Navigation Buttions -->
-            <div class="navigation-buttons-container">
-                <button class="navigation-button" onclick="home()">Home</button>
-                <button class="navigation-button" onclick="heroes()">Heroes</button>
-                <button class="navigation-button" onclick="news()">News</button>
-                <button class="navigation-button page-active">E-Sports</button>
-                <button class="navigation-button" onclick="registerNow()">Register Now</button>
-            </div>
-
-            <!-- Hamburger -->
-            <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
+        <div class="logo">
+            NOKA3
         </div>
-
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/html/home.html">Home</a></li>
+            <li><a href="/html/heroes.html">Heroes</a></li>
+            <li><a href="/html/news.html">News</a></li>
+            <li><a class="active" href="/html/esports.html">E-Sports</a></li>
+            <li><a href="/html/registerNow.html">Register Now</a></li>
+        </ul>
     </nav>
 
     <!-- Content -->
-    <div class="content">
+    <div class="match" id="upcoming-match">
 
-        <h1>E-SPORTS</h1>
+        <h1>Upcoming Match</h1>
+
+        <section class="details-container">
+
+            <div class="column" id="team-liquid">
+                
+                <section class="row">
+                    <img src="/assets/team-liquid.png" alt="Team Liquid" class="team-logo">
+                </section>
+                <section class="row">
+                    <h3>A</h3>
+                </section>
+                <section class="row">
+                    <h3>Team Liquid</h3>
+                </section>
+                <section class="row">
+                    <h3>Europe</h3>
+                </section>
+
+            </div>
+
+            <div class="column" id="labels">
+                
+                <section class="row">
+                    <div class="column">
+                        <h5>12.00 WIB</h5>
+                        <h3>vs</h3>
+                        <h5>June 12, 2022</h5>
+                    </div>
+                </section>
+                <section class="row">
+                    <h3>Division</h3>
+                </section>
+                <section class="row">
+                    <h3>Name</h3>
+                </section>
+                <section class="row">
+                    <h3>Region</h3>
+                </section>
+
+            </div>
+
+            <div class="column" id="dragonx">
+                
+                <section class="row">
+                    <img src="/assets/dragonx.png" alt="DragonX" class="team-logo">
+                </section>
+                <section class="row">
+                    <h3>A</h3>
+                </section>
+                <section class="row">
+                    <h3>DragonX</h3>
+                </section>
+                <section class="row">
+                    <h3>South Korea</h3>
+                </section>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="match" id="previous-match">
+
+        <h1>Previous Match</h1>
+
+        <section class="details-container">
+
+            <div class="column" id="funplus-phoenix">
+                
+                <section class="row">
+                    <img src="/assets/funplusphoenix.png" alt="FunPlus Phoenix" class="team-logo">
+                </section>
+                <section class="row">
+                    <h3>A</h3>
+                </section>
+                <section class="row">
+                    <h3>FunPlus Phoenix</h3>
+                </section>
+                <section class="row">
+                    <h3>Europe</h3>
+                </section>
+                <section class="row">
+                    <h3>13</h3>
+                </section>
+
+            </div>
+
+            <div class="column" id="labels">
+                
+                <section class="row">
+                    <div class="column">
+                        <h5>30:14</h5>
+                        <h3>vs</h3>
+                        <h5>June 10, 2022</h5>
+                    </div>
+                </section>
+                <section class="row">
+                    <h3>Division</h3>
+                </section>
+                <section class="row">
+                    <h3>Name</h3>
+                </section>
+                <section class="row">
+                    <h3>Region</h3>
+                </section>
+                <section class="row">
+                    <h3>Final Score</h3>
+                </section>
+
+            </div>
+
+            <div class="column" id="dragonx">
+                
+                <section class="row">
+                    <img src="/assets/fnatic.png" alt="Fnatic" class="team-logo">
+                </section>
+                <section class="row">
+                    <h3>A</h3>
+                </section>
+                <section class="row">
+                    <h3>Fnatic</h3>
+                </section>
+                <section class="row">
+                    <h3>Europe</h3>
+                </section>
+                <section class="row">
+                    <h3>10</h3>
+                </section>
+
+            </div>
+
+        </section>
 
     </div>
 
     <!-- Footer -->
     <footer>
-
+        <div class="footer-text">
+            <h1>NOKA3</h1>
+            <h3>© 2022 SungTan, Inc.</h1>
+        </div>
     </footer>
     
 </body>

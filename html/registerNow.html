@@ -11,57 +11,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/navigationbar.css">
+    <!-- <link rel="stylesheet" href="../css/navigationbar.css"> -->
     <link rel="stylesheet" href="../css/registerNow.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbarV2.css">
 
     <!-- Javascript -->
     <script src="../script/redirect.js"></script>
     <script src="../script/hamburger.js"></script>
 
-    <title>NoKa 3</title>
+    <title>Register | NoKa 3</title>
 </head>
 
 <!-- Body -->
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <button class="navigation-button" onclick="home()">Home</button>
-        <button class="navigation-button" onclick="heroes()">Heroes</button>
-        <button class="navigation-button" onclick="news()">News</button>
-        <button class="navigation-button" onclick="esports()">E-Sports</button>
-        <button class="navigation-button page-active">Register Now</button>
-    </div>
-
-    <!-- Navigation Bar -->
     <nav>
-
-        <!-- Container -->
-        <div class="nav-container">
-
-            <!-- Game Logo -->
-            <h1>NOKA3</h1>
-
-            <!-- Navigation Buttions -->
-            <div class="navigation-buttons-container">
-                <button class="navigation-button" onclick="home()">Home</button>
-                <button class="navigation-button" onclick="heroes()">Heroes</button>
-                <button class="navigation-button" onclick="news()">News</button>
-                <button class="navigation-button" onclick="esports()">E-Sports</button>
-                <button class="navigation-button page-active">Register Now</button>
-            </div>
-
-            <!-- Hamburger -->
-            <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
+        <div class="logo">
+            NOKA3
         </div>
-
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/html/home.html">Home</a></li>
+            <li><a href="/html/heroes.html">Heroes</a></li>
+            <li><a href="/html/news.html">News</a></li>
+            <li><a href="/html/esports.html">E-Sports</a></li>
+            <li><a class="active" href="/html/registerNow.html">Register Now</a></li>
+        </ul>
     </nav>
 
     <!-- Content -->
@@ -69,13 +53,77 @@
 
         <h1>REGISTER NOW</h1>
 
+        <form action="" method="get" id="register-form">
+
+            <div class="form-fields">
+
+                <section class="labels">
+                    <div class="label-containers">
+                        
+                        <label for="name">Username</label>
+                    </div>
+                    <div class="label-containers">
+                        
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="label-containers">
+                        
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="label-containers">
+
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <div class="label-containers">
+                        
+                        <label for="gender">Gender</label>
+                    </div>
+
+                </section>
+
+                <section class="input-fields">
+                    <div class="fields-containers">
+                        <input type="text" name="username" id="username" placeholder="Type username here">
+                    </div>
+                    <div class="fields-containers">
+                        <input type="text" name="email" id="email" placeholder="e.g. nokateam@sungtan.com">
+                    </div>
+                    <div class="fields-containers">
+                        <input type="password" name="password" id="password" placeholder="Type password here">
+                    </div>
+                    <div class="fields-containers">
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password here">
+                    </div>
+                    <div class="fields-containers" id="gender-btns">
+                        <div class="row">
+                            <input type="radio" name="gender" class="radio-btn" id="gender-male">Male
+                            <input type="radio" name="gender" class="radio-btn" id="gender-female">Female
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="terms-and-conditions-container">
+                <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions">I agree with the terms and conditions
+            </div>
+            
+            <p id="error"></p>
+            <button type="submit" id="send-btn">Register</button>
+        </form>
+
+
     </div>
 
     <!-- Footer -->
     <footer>
-
+        <div class="footer-text">
+            <h1>NOKA3</h1>
+            <h3>© 2022 SungTan, Inc.</h1>
+        </div>
     </footer>
     
 </body>
+
+<script src="/script/form.js" defer></script>
 
 </html>

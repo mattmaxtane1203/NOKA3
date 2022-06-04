@@ -13,55 +13,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/navigationbar.css">
+    <!-- <link rel="stylesheet" href="../css/navigationbar.css"> -->
     <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="/css/navbarV2.css">
 
     <!-- Javascript -->
     <script src="../script/redirect.js"></script>
     <script src="../script/hamburger.js"></script>
 
-    <title>NoKa 3</title>
+    <title>News | NoKa 3</title>
 </head>
 
 <!-- Body -->
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <button class="navigation-button" onclick="home()">Home</button>
-        <button class="navigation-button" onclick="heroes()">Heroes</button>
-        <button class="navigation-button page-active">News</button>
-        <button class="navigation-button" onclick="esports()">E-Sports</button>
-        <button class="navigation-button" onclick="registerNow()">Register Now</button>
-    </div>
-
     <!-- Navigation Bar -->
     <nav>
-
-        <!-- Container -->
-        <div class="nav-container">
-
-            <!-- Game Logo -->
-            <h1>NOKA3</h1>
-
-            <!-- Navigation Buttions -->
-            <div class="navigation-buttons-container">
-                <button class="navigation-button" onclick="home()">Home</button>
-                <button class="navigation-button" onclick="heroes()">Heroes</button>
-                <button class="navigation-button page-active">News</button>
-                <button class="navigation-button" onclick="esports()">E-Sports</button>
-                <button class="navigation-button" onclick="registerNow()">Register Now</button>
-            </div>
-
-            <!-- Hamburger -->
-            <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
+        <div class="logo">
+            NOKA3
         </div>
-
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/html/home.html">Home</a></li>
+            <li><a href="/html/heroes.html">Heroes</a></li>
+            <li><a class="active" href="/html/news.html">News</a></li>
+            <li><a href="/html/esports.html">E-Sports</a></li>
+            <li><a href="/html/registerNow.html">Register Now</a></li>
+        </ul>
     </nav>
 
     <!-- Content -->
@@ -69,11 +51,29 @@
 
         <h1>NEWS</h1>
 
+        <section class="news-container">
+
+            <div class="news">
+                <img src="/assets/news1.jpg" alt="NOKA3 HITS 1M USERS ON FIRST DAY" class="news-image">
+                <h4>5/5/2022</h4>
+                <h3>NOKA3 HITS 1M USERS ON FIRST DAY</h3>
+            </div>
+            <div class="news">
+                <img src="/assets/news2.jpg" alt="PATCH 1.01 RELEASED" class="news-image">
+                <h4>6/5/2022</h4>
+                <h3>PATCH 1.01 RELEASED</h3>
+            </div>
+
+        </section>
+
     </div>
 
     <!-- Footer -->
     <footer>
-
+        <div class="footer-text">
+            <h1>NOKA3</h1>
+            <h3>© 2022 SungTan, Inc.</h1>
+        </div>
     </footer>
     
 </body>

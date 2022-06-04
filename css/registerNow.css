@@ -1,4 +1,188 @@
-h1 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Odibee Sans', sans-serif;
+    color: white;
     text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.content {
+    height: 150vh;
+    background-image: url(/assets/register-now.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-fields {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.label-containers {
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fields-containers {
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form {
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    border-radius: 77px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.labels {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+    margin-right: 10px;
+}
+
+.input-fields {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label {
+    font-size: 30px;
+}
+
+input {
+    height: 50px;
+    width: 400px;
+    border-radius: 77px;
+
+    color: grey;
+    font-size: 25px;
+}
+
+.radio-btn {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
+
+#gender-btns {
+    width: 100%;
+}
+
+#terms-and-conditions {
+    height: 30px;
+    width: 30px;
+}
+
+.row {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.terms-and-conditions-container {
+    width: 50%;
+    /* margin-bottom: 10px; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+button {
+    border: none;
+
+    background-color: black;
+    border-radius: 77px;
+    color: white;
+    font-size: 30px;
+}
+
+button:hover {
+    color: darkred;
+    cursor: pointer;
+}
+
+#error {
+    font-size: 25px;
+    color: red;
+}
+
+@media only screen and (max-width: 800px){
+
+    form {
+        width: 400px;
+    }
+
+    .form-fields {
+        justify-content: center;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        height: 30px;
+        width: 200px;
+
+        font-size: 15px;
+    }
+
+    .radio-btn {
+        height: 20px;
+        width: 20px;
+    }
+
+    #terms-and-conditions {
+        height: 15px;
+        width: 15px;
+    }
+
+    .terms-and-conditions-container {
+        font-size: 15px;
+    }
+
 }
