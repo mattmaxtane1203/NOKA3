@@ -11,12 +11,6 @@ nav {
   z-index: 100;
 }
 
-nav .logo {
-  color: var(--white);
-  font-size: 40px;
-  font-weight: 600;
-}
-  
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -45,26 +39,24 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
-nav .menu-btn i {
+nav .logo {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+nav .dropdown-menu i {
   color: white;
   font-size: 2rem;
   cursor: pointer;
   display: none;
 }
 
-#click {
+#toggle {
   display: none;
 }
   
 @media (max-width: 800px) {
-
-  nav .menu-btn i {
-    display: block;
-  }
-
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d";
-  }
 
   nav ul {
     position: fixed;
@@ -77,30 +69,38 @@ nav .menu-btn i {
     transition: all 0.5s ease;
     z-index: -1;
   }
-
-  #click:checked ~ ul {
-    top: 80px;
+  
+  nav .dropdown-menu i {
+    display: block;
   }
 
+  #toggle:checked ~ .dropdown-menu i:before {
+    content: "\f00d";
+  }
+
+  #toggle:checked ~ ul li a {
+    margin-left: 0px;
+  }
+
+  #toggle:checked ~ ul {
+    top: 80px;
+  }
+  
   nav ul li {
     width: 100%;
     margin: 40px 0;
   }
-
+  
   nav ul li a {
     width: 100%;
     display: block;
     font-size: 1.5rem;
   }
-
-  #click:checked ~ ul li a {
-    margin-left: 0px;
-  }
-
+  
   nav ul li a.active,
   nav ul li a:hover {
     background: none;
     color: darkred;
   }
 
-  }
+}
