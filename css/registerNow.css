@@ -121,7 +121,6 @@ input {
 
 .terms-and-conditions-container {
     width: 50%;
-    /* margin-bottom: 10px; */
 
     display: flex;
     flex-direction: row;
